@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a2a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* White block container */
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Title */
+.title {
+    margin-bottom: 70px;
+    font-size: 36px;
+
+}
+
+/* Flags layout */
+.flags-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap:wrap;
+}
+
+.flag-card {
+    text-align: center;
+}
+
+.flag {
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+
+/* ------------------ */
+/* Armenia */
+.armenia .stripe {
+    height: 33.33%;
+}
+
+.armenia .red { background: #D90012; }
+.armenia .blue { background: #0033A0; }
+.armenia .orange { background: #F2A800; }
+
+/* ------------------ */
+/* Bahrain */
+.bahrain {
+    display: flex;
+}
+
+.bahrain .white {
+    width: 40%;
+    background: white;
+}
+
+.bahrain .red {
+    width: 60%;
+    background: #CE1126;
+    clip-path: polygon(
+        0 0, 100% 0, 100% 100%, 0 100%,
+        15% 90%, 0 80%, 15% 70%, 0 60%,
+        15% 50%, 0 40%, 15% 30%, 0 20%,
+        15% 10%
+    );
+}
+
+/* Benin */
+.benin {
+    display: flex;
+}
+
+.benin .green {
+    width: 40%;
+    background: #008751;
+}
+
+.benin .right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.benin .yellow {
+    height: 50%;
+    background: #FCD116;
+}
+
+.benin .red {
+    height: 50%;
+    background: #E8112D;
+}
+
+/* Flag name */
+.flag-name {
+    font-weight: bold;
+    font-size: 18px;
+}
